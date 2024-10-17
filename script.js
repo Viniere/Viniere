@@ -41,3 +41,6 @@ function updateCart() {
     totalCostElement.textContent = `Totalkostnad: ${totalCost} kr`;
 }
 
+function redirect(page) {
+    window.location.href = page;
+}
