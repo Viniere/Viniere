@@ -42,9 +42,10 @@ html, body {
 }
 
 #logo {
-    height: auto; /* Remove fixed height */
-    width: 80%; /* Scale based on container width */
-    max-width: 100px; /* Set a max width */
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 60px;
 }
 
 /* Shop container */
@@ -110,8 +111,7 @@ html, body {
 
 .image-placeholder {
     width: 100%;
-    height: auto; /* Keep proportions */
-    max-height: 150px; /* Set a max height */
+    height: 200px;
     background-color: #e0e0e0;
     border-radius: 15px;
     display: flex;
@@ -335,14 +335,15 @@ h2 {
 #sidebar {
     position: fixed;
     top: 0;
-    left: -300px; /* Initially off-screen */
+    left: -300px; /* Start hidden, off-screen to the left */
     width: 250px;
     height: 100%;
-    background: linear-gradient(180deg, #993333, #660000); 
+    background: linear-gradient(180deg, #993333, #660000); /* Gradient background */
     color: white;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
-    transition: left 0.5s ease; /* Smooth slide-in effect */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    transition: left 0.5s ease; /* Smooth slide-in animation */
     z-index: 1000;
+    font-family: 'Roboto', sans-serif; /* Modern font */
 }
 
 /* Sidebar open state */
