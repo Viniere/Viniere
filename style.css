@@ -335,15 +335,14 @@ h2 {
 #sidebar {
     position: fixed;
     top: 0;
-    left: -300px; /* Start hidden, off-screen to the left */
+    left: -300px; /* Initially off-screen */
     width: 250px;
     height: 100%;
-    background: linear-gradient(180deg, #993333, #660000); /* Gradient background */
+    background: linear-gradient(180deg, #993333, #660000); 
     color: white;
-    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-    transition: left 0.5s ease; /* Smooth slide-in animation */
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    transition: left 0.5s ease; /* Smooth slide-in effect */
     z-index: 1000;
-    font-family: 'Roboto', sans-serif; /* Modern font */
 }
 
 /* Sidebar open state */
@@ -460,81 +459,36 @@ h2 {
     margin-top: 20px;
 }
 
+/* Sidebar for Tablets */
 @media only screen and (max-width: 768px) {
-    #header h1 {
-        font-size: 3em;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
-    }
-
-    .wine-showcase {
-        grid-template-columns: repeat(2, 1fr); /* Adjust grid */
-    }
-
-    /* Other adjustments as needed */
-}
-
-/* For Mobile Phones */
-@media only screen and (max-width: 480px) {
-    #header h1 {
-        font-size: 2.5em; /* Reduce font size for smaller screens */
-    }
-
-    .grid-container, .wine-showcase {
-        grid-template-columns: 1fr; /* One column on phones */
-    }
-
     #sidebar {
-        width: 100%; /* Sidebar takes up full width on mobile */
-    }
-
-    .container {
-        padding: 10px; /* Reduce padding for smaller screens */
+        width: 80%; /* Sidebar covers 80% of the screen */
     }
 
     #open-sidebar-btn {
-        font-size: 1.2em; /* Adjust button size for mobile */
+        left: 20px; /* Adjust button position */
+        font-size: 1.2em; /* Slightly smaller font */
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .grid-container, .wine-showcase {
-        grid-template-columns: 1fr; /* Single column for phones */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    h1, h2, h3 {
-        font-size: 1.5em; /* Reduce for mobile */
-    }
-}
-
+/* Sidebar for Mobile Phones */
 @media only screen and (max-width: 480px) {
     #sidebar {
-        width: 100%; /* Full width on mobile */
-        left: -100%; /* Initially hide off-screen */
+        width: 100%; /* Sidebar takes full width on mobile */
+        left: -100%; /* Initially off-screen */
+        transition: left 0.3s ease; /* Smooth slide in/out on mobile */
     }
 
     .sidebar-open {
-        left: 0; /* Slide in */
+        left: 0; /* Fully slide in on mobile */
     }
 
     #open-sidebar-btn {
-        left: 10px; /* Adjust button position */
-        font-size: 1em; /* Adjust size for mobile */
+        left: 10px; /* Adjust the open button for mobile */
+        font-size: 1em; /* Make the button smaller */
     }
-}
-
-@media only screen and (max-width: 480px) {
-    .shop-container, .content {
-        padding: 20px; /* Reduce padding for mobile */
+    
+    #close-btn {
+        font-size: 1.3em; /* Adjust close button size for mobile */
     }
 }

@@ -40,3 +40,11 @@ function updateCart() {
     const totalCostElement = document.getElementById('total-cost');
     totalCostElement.textContent = `Totalkostnad: ${totalCost} kr`;
 }
+
+document.getElementById('open-sidebar-btn').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.add('sidebar-open');
+});
+
+document.getElementById('close-btn').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.remove('sidebar-open');
+});
