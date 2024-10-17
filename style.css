@@ -1,0 +1,462 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+#header {
+    background: linear-gradient(90deg, #8b0000, #5a0c0c);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+#header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#header nav ul li {
+    display: inline;
+}
+
+#header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Georgia', serif;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 60px;
+}
+
+/* Shop container */
+.shop-container {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #8b0000;
+}
+
+.form-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#phone {
+    padding: 10px;
+    width: 250px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#verify-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#verify-btn:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: red;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Placeholder section */
+.wine-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+}
+
+.wine-item {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wine-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wine-info h3 {
+    color: #5a0c0c;
+    margin-bottom: 10px;
+}
+
+.wine-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.wine-info span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.wine-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.wine-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer section styling */
+footer {
+    background-color: #5a0c0c;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column p, .footer-bottom p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    transition: transform 0.2s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
+/* Contact form */
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #993333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#responseMessage {
+    margin-top: 10px;
+    font-size: 1em;
+    color: green;
+}
+
+/* About us section */
+.about-us {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-us h2 {
+    color: #993333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button hover animation */
+button:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.content {
+    padding: 50px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    color: #5a0c0c;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-rows: auto auto; /* Automatically adjusts the rows */
+    gap: 30px; /* Gap between the items */
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.grid-item h3 {
+    font-size: 1.2em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+    color: #5a0c0c;
+}
+
+/* Sidebar styles */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Start hidden, off-screen to the left */
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(180deg, #993333, #660000); /* Gradient background */
+    color: white;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    transition: left 0.5s ease; /* Smooth slide-in animation */
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* Sidebar open state */
+.sidebar-open {
+    left: 0; /* Fully slide the sidebar into view */
+}
+
+/* Sidebar header */
+#sidebar .sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #660000;
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #993333; /* Adds a clean border */
+}
+
+/* Sidebar list styles */
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 1.2em;
+    transition: background-color 0.5s, transform 0.5s;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+}
+
+/* Hover effect for sidebar links */
+#sidebar ul li a:hover {
+    background-color: #bb4444;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow to links */
+}
+
+/* Open Sidebar Button */
+#open-sidebar-btn {
+    position: fixed;
+    top: 80px;
+    left: 20px; /* Place the button on the left */
+    background-color: #993333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1.4em;
+    transition: all 0.5s ease; /* Smooth transitions for button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    z-index: 1001; /* Keep above sidebar */
+}
+
+/* Button hover effect */
+#open-sidebar-btn:hover {
+    background-color: #bb4444;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Close button inside sidebar */
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+#close-btn:hover {
+    color: #ffcccc; /* Slight color change on hover */
+}
+
+/* Optional: Adjust button position when sidebar is open */
+#open-sidebar-btn.open {
+    left: 270px; /* Move button to match sidebar width when open */
+}
+
+/* Styling for the quantity input boxes */
+.purchase-options input[type="number"] {
+    width: 50px; /* Set the width of the input */
+    height: 50px; /* Set the height to make it square */
+    text-align: center; /* Center text inside the input */
+    font-size: 1em;
+    border: 1px solid #993333;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.purchase-options input[type="number"]:focus {
+    outline: none;
+    border-color: #bb4444; /* Change border color on focus */
+}
+
+/* Style for the total cost text */
+#total-cost {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #660000;
+    margin-top: 20px;
+}
+

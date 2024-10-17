@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viniére</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">Viniére</div>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="viner.html">Våra Viner</a></li>
+            <li><a href="info.html">Om Oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+    
+    <button id="open-sidebar-btn" onclick="toggleSidebar()">☰</button>
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Viniére</h1>
+    </header>
+    
+    <div class="shop-container">
+        <h2>Köp Våra Viner</h2>
+        <p>Fyll i ditt telefonnummer för att starta din beställning</p>
+
+        <div class="form-container">
+            <label for="phone">Telefonnummer:</label>
+            <input type="text" id="phone" placeholder="+46 700 123 456"/>
+            <button id="verify-btn">Köp</button>
+            <p id="error-message"></p>
+        </div>
+
+        <p id="total-cost">Totalkostnad: 0 kr</p>
+
+
+        <div class="wine-showcase">
+            <!-- Wine 1 -->
+            <div class="wine-item">
+                <div class="image-placeholder">Bild 1</div>
+                <div class="wine-info">
+                    <h3>Vin 1</h3>
+                    <p>Ett fint rött vin med toner av körsbär och vanilj.</p>
+                    <span>Pris: 199 kr</span>
+                    <div class="purchase-options">
+                        <input type="number" id="wine1-quantity" placeholder="Antal" min="0" oninput="updateCart(199, 'wine1-quantity')" />
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Wine 2 -->
+            <div class="wine-item">
+                <div class="image-placeholder">Bild 2</div>
+                <div class="wine-info">
+                    <h3>Vin 2</h3>
+                    <p>Friskt vitt vin med citrus- och päronsmak.</p>
+                    <span>Pris: 119 kr</span>
+                    <div class="purchase-options">
+                        <input type="number" id="wine2-quantity" placeholder="Antal" min="0" oninput="updateCart(149, 'wine2-quantity')" />
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Wine 3 -->
+            <div class="wine-item">
+                <div class="image-placeholder">Bild 3</div>
+                <div class="wine-info">
+                    <h3>Vin 3</h3>
+                    <p>Kraftfullt rödvin med smak av mörka bär och ek.</p>
+                    <span>Pris: 249 kr</span>
+                    <div class="purchase-options">
+                        <input type="number" id="wine3-quantity" placeholder="Antal" min="0" oninput="updateCart(249, 'wine3-quantity')" />
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Kontakt</h3>
+                <p>Telefon: +46 123 456 789 | Email: info@viniéreuf.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Följ Oss</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><img src="/bilder/Facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="/bilder/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><img src="/bilder/linkedin.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Om Viniére</h3>
+                <p>Viniére UF är dedikerat till att ge våra kunder en elegant vinupplevelse. Vi arbetar med hållbara och ansedda vinproducenter världen över.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Viniére skapad av Elias, Felix, Viktoria och Floria.</p>
+        </div>
+    </footer>
+</body>
+</html>

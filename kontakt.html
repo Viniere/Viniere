@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viniére</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">Viniére</div>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="viner.html">Våra Viner</a></li>
+            <li><a href="info.html">Om Oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+    
+    <button id="open-sidebar-btn" onclick="toggleSidebar()">☰</button>
+
+    <header id="header">
+        <h1>Viniére</h1>
+    </header>
+
+    <section class="content">
+        <div class="contact-section">
+            <h2>Vi finns här för dig</h2>
+            <p>Har du frågor om våra produkter, en beställning eller behöver du hjälp? Vi finns här för att hjälpa dig!</p>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" placeholder="Ditt namn" required>
+
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" placeholder="Din e-postadress" required>
+
+                    <label for="message">Meddelande:</label>
+                    <textarea id="message" name="message" placeholder="Ditt meddelande" required></textarea>
+
+                    <button type="submit" id="submitBtn">Skicka Meddelande</button>
+                    <p id="responseMessage"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Kontakt</h3>
+                <p>Telefon: +46 123 456 789 | Email: info@viniéreuf.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Följ Oss</h3>
+                <ul class="social-links">
+                    <li><a href="#"><img src="/bilder/Facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/bilder/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="/bilder/linkedin.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Om Viniére</h3>
+                <p>Viniére UF är dedikerat till att ge våra kunder en elegant vinupplevelse. Vi arbetar med hållbara och ansedda vinproducenter världen över.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Viniére skapad av Elias, Felix, Viktoria och Floria.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viniére - UF</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">Viniére</div>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="viner.html">Våra Viner</a></li>
+            <li><a href="info.html">Om Oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <button id="close-btn" onclick="toggleSidebar()">✕</button>
+    </div>
+    
+    <button id="open-sidebar-btn" onclick="toggleSidebar()">☰</button>
+    
+       
+    
+    <div id="header">
+        <h1>Viniére</h1>
+    </div>
+
+    <div class="wine-showcase">
+        <div class="wine-item">
+            <div class="image-placeholder">Bild 1</div>
+            <div class="wine-info">
+                <button class="wine-button" onclick="redirect('viner.html')">Se Vin</button>
+                <p>Text 1 - Information om vinet och pris</p>
+            </div>
+        </div>
+        <div class="wine-item">
+            <div class="image-placeholder">Bild 2</div>
+            <div class="wine-info">
+                <button class="wine-button" onclick="redirect('viner.html')">Se Vin</button>
+                <p>Text 2 - Information om vinet och pris</p>
+            </div>
+        </div>
+        <div class="wine-item">
+            <div class="image-placeholder">Bild 3</div>
+            <div class="wine-info">
+                <button class="wine-button" onclick="redirect('viner.html')">Se Vin</button>
+                <p>Text 3 - Information om vinet och pris</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Viniére - UF</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Om Oss</h3>
+                <p>Vi är svenska studenter som genom Ung Företagsamhet (UF) har tagit steget att starta vårt eget företag. Viniére UF är vår vision att kombinera passionen för vin med lärandet av entreprenörskap.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Vårt Sortiment</h3>
+                <p>Vårt noggrant utvalda sortiment speglar mångfalden av smaker och traditioner från vinets värld. Vi strävar efter att tillgodose både vinkännare och nybörjare genom att erbjuda ett brett utbud som är både spännande och tillgängligt.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Vårt Mål</h3>
+                <p>Genom Viniére UF vill vi inte bara sälja vin – vi vill skapa en unik upplevelse för våra kunder. Vårt mål är att varje flaska ska vara en del av en större berättelse.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Hållbarhet</h3>
+                <p>Vi är medvetna om vinproduktionens påverkan på miljön och vill stödja hållbara och miljövänliga vingårdar. Vårt åtagande för hållbarhet är en viktig del av vårt företags filosofi.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Producenter</h3>
+                <p>Vi samarbetar med några av de mest respekterade vinproducenterna i världen, och vi väljer dem utifrån deras kvalitet och engagemang för hållbara metoder.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Ung Företagsamhet (UF)</h3>
+                <p>Viniére är möjligt tack vare Ung Företagsamhet (UF), ett program som ger unga entreprenörer en plattform att förverkliga sina idéer.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Kontakt</h3>
+                <p>Telefon: +46 123 456 789 | Email: info@viniéreuf.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Följ Oss</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><img src="/bilder/Facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="/bilder/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><img src="/bilder/linkedin.png" alt="LinkedIn"></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Om Viniére</h3>
+                <p>Viniére UF är dedikerat till att ge våra kunder en elegant vinupplevelse. Vi arbetar med hållbara och ansedda vinproducenter världen över.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Viniére skapad av Elias, Felix, Viktoria och Floria.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
