@@ -42,10 +42,9 @@ html, body {
 }
 
 #logo {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    height: 60px;
+    height: auto; /* Remove fixed height */
+    width: 80%; /* Scale based on container width */
+    max-width: 100px; /* Set a max width */
 }
 
 /* Shop container */
@@ -111,7 +110,8 @@ html, body {
 
 .image-placeholder {
     width: 100%;
-    height: 200px;
+    height: auto; /* Keep proportions */
+    max-height: 150px; /* Set a max height */
     background-color: #e0e0e0;
     border-radius: 15px;
     display: flex;
@@ -460,3 +460,81 @@ h2 {
     margin-top: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+    #header h1 {
+        font-size: 3em;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+
+    .wine-showcase {
+        grid-template-columns: repeat(2, 1fr); /* Adjust grid */
+    }
+
+    /* Other adjustments as needed */
+}
+
+/* For Mobile Phones */
+@media only screen and (max-width: 480px) {
+    #header h1 {
+        font-size: 2.5em; /* Reduce font size for smaller screens */
+    }
+
+    .grid-container, .wine-showcase {
+        grid-template-columns: 1fr; /* One column on phones */
+    }
+
+    #sidebar {
+        width: 100%; /* Sidebar takes up full width on mobile */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    #open-sidebar-btn {
+        font-size: 1.2em; /* Adjust button size for mobile */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-container, .wine-showcase {
+        grid-template-columns: 1fr; /* Single column for phones */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.5em; /* Reduce for mobile */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #sidebar {
+        width: 100%; /* Full width on mobile */
+        left: -100%; /* Initially hide off-screen */
+    }
+
+    .sidebar-open {
+        left: 0; /* Slide in */
+    }
+
+    #open-sidebar-btn {
+        left: 10px; /* Adjust button position */
+        font-size: 1em; /* Adjust size for mobile */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .shop-container, .content {
+        padding: 20px; /* Reduce padding for mobile */
+    }
+}
