@@ -459,36 +459,3 @@ h2 {
     margin-top: 20px;
 }
 
-/* Sidebar for Tablets */
-@media only screen and (max-width: 768px) {
-    #sidebar {
-        width: 80%; /* Sidebar covers 80% of the screen */
-    }
-
-    #open-sidebar-btn {
-        left: 20px; /* Adjust button position */
-        font-size: 1.2em; /* Slightly smaller font */
-    }
-}
-
-/* Sidebar for Mobile Phones */
-@media only screen and (max-width: 480px) {
-    #sidebar {
-        width: 100%; /* Sidebar takes full width on mobile */
-        left: -100%; /* Initially off-screen */
-        transition: left 0.3s ease; /* Smooth slide in/out on mobile */
-    }
-
-    .sidebar-open {
-        left: 0; /* Fully slide in on mobile */
-    }
-
-    #open-sidebar-btn {
-        left: 10px; /* Adjust the open button for mobile */
-        font-size: 1em; /* Make the button smaller */
-    }
-    
-    #close-btn {
-        font-size: 1.3em; /* Adjust close button size for mobile */
-    }
-}
